@@ -4,7 +4,7 @@
 	import { fly } from 'svelte/transition'
 </script>
 
-<div style="height: calc(100vh - 190px)" class="flex flex-wrap justify-evenly w-full">
+<div style="min-height: calc(100vh - 190px)" class="flex flex-wrap justify-evenly w-full">
 	<article class="flex flex-col items-center">
 		<img
 			in:fly={animationConfig}

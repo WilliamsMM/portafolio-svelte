@@ -12,10 +12,10 @@
 >
 	{#each Links as item}
 		<a
-			class="flex items-center gap-1 text-xl py-0 sm:py-3 sm:rounded-lg transition-all {currentPath.href ===
+			class="flex items-center gap-1 text-xl p-2 sm:py-3 rounded-lg transition-all {currentPath.href ===
 			item.href
-				? 'bg-white text-black pl-5'
-				: 'hover:bg-opacity-20 hover:pl-5 hover:text-black hover:bg-white px-2'}"
+				? 'bg-white text-black sm:pl-5'
+				: 'hover:bg-opacity-20 sm:hover:pl-5 hover:text-black hover:bg-white px-2'}"
 			href={item.href}
 			target={item.target ?? null}
 		>
