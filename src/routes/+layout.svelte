@@ -9,27 +9,31 @@
 
 <BackgroundAnimated />
 
-<main class="flex gap-24 p-5">
+<main class="sm:flex-row flex flex-col">
 	<Aside />
 
 	<div class="w-full">
 		<Header />
 		<slot />
+
+		<footer
+			class="flex justify-between p-5 w-full"
+		>
+			<div class="flex items-center gap-1">
+				<p>Built with:</p>
+				<a href="https://kit.svelte.dev" target="_blank">Sveltekit</a>
+			</div>
+
+			<div>
+				<a
+					class="flex items-center gap-1"
+					href="https://www.linkedin.com/in/williamsmm"
+					target="_blank"><Icon icon="devicon:linkedin" /> Linkedin</a
+				>
+			</div>
+		</footer>
 	</div>
 </main>
-
-<footer class="flex justify-between w-full absolute bottom-0 left-0 p-5">
-	<div class="flex items-center gap-1">
-		<p>Built with:</p>
-		<a href="https://kit.svelte.dev" target="_blank">Sveltekit</a>
-	</div>
-
-	<div>
-		<a class="flex items-center gap-1" href="https://www.linkedin.com/in/williamsmm" target="_blank"
-			><Icon icon="devicon:linkedin" /> Linkedin</a
-		>
-	</div>
-</footer>
 
 <style>
 	:global(:root) {

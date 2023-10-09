@@ -1,12 +1,21 @@
 <script>
+	import { page } from '$app/stores'
 	import { Links } from '$lib/data/Links'
 	import Icon from '@iconify/svelte'
+
+	let currentPath = Links.filter((item) => item.href === $page.url.pathname)[0]
+	$: currentPath = Links.filter((item) => item.href === $page.url.pathname)[0]
 </script>
 
-<aside class="flex flex-col gap-2">
+<aside
+	class="flex justify-center py-4 sm:px-2 sm:py-2 flex-wrap sm:justify-start sm:flex-col gap-3 sm:gap-2 sm:h-screen w-full sm:w-52 z-10 sm:bg-white sm:bg-opacity-10"
+>
 	{#each Links as item}
 		<a
-			class="flex items-center gap-2 text-xl py-3 hover:text-red-500 hover:translate-x-1 transition"
+			class="flex items-center gap-1 text-xl py-0 sm:py-3 sm:rounded-lg transition-all {currentPath.href ===
+			item.href
+				? 'bg-white text-black pl-5'
+				: 'hover:bg-opacity-20 hover:pl-5 hover:text-black hover:bg-white px-2'}"
 			href={item.href}
 			target={item.target ?? null}
 		>
