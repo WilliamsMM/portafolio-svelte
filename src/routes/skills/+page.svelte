@@ -37,10 +37,9 @@
 	]
 </script>
 
-<div in:fly={animationConfig} style="min-height: calc(100vh - 190px)" class="flex max-w-4xl mx-auto flex-wrap justify-center items-center gap-10">
+<div class="flex max-w-4xl mx-auto flex-wrap justify-center items-center gap-10">
 	{#each skills as skill}
 		<div
-			
 			class="w-40 p-4 flex flex-col gap-2 items-center justify-center bg-white bg-opacity-20 rounded-lg shadow-2xl"
 		>
 			<img class="h-28 object-cover rounded-xl" src={skill.img} alt={skill.name} />

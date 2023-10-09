@@ -4,7 +4,7 @@
 	import { fly } from 'svelte/transition'
 </script>
 
-<div style="min-height: calc(100vh - 190px)" class="flex flex-wrap justify-evenly w-full">
+<div class="flex flex-wrap justify-evenly w-full">
 	<article class="flex flex-col items-center">
 		<img
 			in:fly={animationConfig}
@@ -40,7 +40,7 @@
 		</p>
 	</div>
 
-	<div class="w-full flex justify-center h-14">
+	<div class="w-full flex justify-center h-14 sm:mt-20">
 		<a
 			href="/skills"
 			class="relative inline-flex items-center justify-center p-4 px-5 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:shadow-2xl"
