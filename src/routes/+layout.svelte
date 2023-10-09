@@ -4,6 +4,7 @@
 	import Header from '$lib/components/Header.svelte'
 	import Icon from '@iconify/svelte'
 	import '../app.css'
+	import '../bgAnimated.scss'
 </script>
 
 <BackgroundAnimated />
