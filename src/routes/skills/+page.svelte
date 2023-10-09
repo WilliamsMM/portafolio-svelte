@@ -44,6 +44,11 @@
 	]
 </script>
 
+
+<svelte:head>
+	<title> Skills | Williams Moya</title>
+</svelte:head>
+
 <div class="flex max-w-4xl mx-auto flex-wrap justify-center items-center gap-10">
 	{#each skills as skill}
 		<BoxAnimated ms={skill.ms}>

@@ -4,6 +4,10 @@
 	import { fly } from 'svelte/transition'
 </script>
 
+<svelte:head>
+	<title>Williams Moya</title>
+</svelte:head>
+
 <div class="flex flex-wrap justify-evenly w-full">
 	<article class="flex flex-col items-center">
 		<img
