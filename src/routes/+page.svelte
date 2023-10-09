@@ -22,7 +22,7 @@
 		</article>
 	</article>
 
-	<div in:fly={{ x: 20, y: 30, opacity: 0 }} class="py-6 flex max-w-md flex-col items-center">
+	<div in:fly={{ x: 20, y: 30, opacity: 0 }} class="sm:px-0 px-5 py-6 flex max-w-md flex-col items-center">
 		<p class="text-xl bg-white bg-opacity-20 p-5 rounded-lg shadow-xl">
 			I am a front-end web developer with expertise in creating attractive and functional web
 			interfaces. I specialize in HTML, CSS, and JavaScript, and have experience with popular

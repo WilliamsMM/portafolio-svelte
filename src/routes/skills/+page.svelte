@@ -37,7 +37,7 @@
 	]
 </script>
 
-<div in:fly={animationConfig} style="height: calc(100vh - 190px)" class="flex max-w-4xl mx-auto flex-wrap justify-center items-center gap-10">
+<div in:fly={animationConfig} style="min-height: calc(100vh - 190px)" class="flex max-w-4xl mx-auto flex-wrap justify-center items-center gap-10">
 	{#each skills as skill}
 		<div
 			

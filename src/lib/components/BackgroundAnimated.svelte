@@ -13,6 +13,6 @@
 		<div class="clouds" />
 </div>
 
-<div class="bg-black bg-opacity-60 backdrop-blur-sm w-full h-full fixed top-0 left-0 -z-40">
+<div class="bg-black bg-opacity-75 sm:bg-opacity-60 sm:backdrop-blur-sm w-full h-full fixed top-0 left-0 -z-40">
 	
 </div>
